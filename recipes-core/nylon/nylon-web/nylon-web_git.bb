@@ -25,6 +25,14 @@ inherit pkgconfig
 # task must opt back in explicitly.
 do_compile[network] = "1"
 
+# Upstream's top-level Makefile recurses into vendored git submodules
+# (packges/cJSON, packges/cREST) for its own "clean"/"all" targets, but we
+# fetch with a plain git:// URL (no submodule content) and build against
+# the standalone cjson/crest recipes via DEPENDS instead. Skip the default
+# base_do_configure (oe_runmake clean), which would otherwise fail trying
+# to recurse into those empty submodule directories.
+do_configure[noexec] = "1"
+
 CGI_SRCS = "DeviceController FirewallController NetworkController StatusController \
             SystemController UserController WifiController UciUtil main"
 
