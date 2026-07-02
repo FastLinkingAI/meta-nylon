@@ -12,7 +12,7 @@ SRC_URI = "git://github.com/FastLinkingAI/NylonWeb.git;protocol=https;branch=mai
            file://users \
            file://COPYING \
            "
-SRCREV = "1c603f59d208ab7e0d8912913792ea33c6d07e1c"
+SRCREV = "1ef0a6e93d41edadbf42c02c53cf82de392dfe81"
 
 S = "${WORKDIR}/git"
 
