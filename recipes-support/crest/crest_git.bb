@@ -26,8 +26,8 @@ do_compile() {
 
 do_install() {
 	install -d ${D}${libdir} ${D}${includedir}
-	install -m 0755 ${B}/libcrest.so ${D}${libdir}/libcrest.so
-	ln -sf libcrest.so ${D}${libdir}/libcrest.so.0
+	install -m 0755 ${B}/libcrest.so ${D}${libdir}/libcrest.so.0
+	ln -sf libcrest.so.0 ${D}${libdir}/libcrest.so
 	install -m 0644 cREST.h ${D}${includedir}/cREST.h
 }
 
