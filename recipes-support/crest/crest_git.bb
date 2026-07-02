@@ -2,7 +2,7 @@ SUMMARY = "cREST RESTful framework for C (FastCGI)"
 DESCRIPTION = "Lightweight C REST framework used by NylonWeb, built on cJSON and FastCGI."
 HOMEPAGE = "https://github.com/JeffTsengTwn/cREST"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://COPYING;md5=c9900ea6c362454ca1ba5b9fcd88fea4"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/COPYING;md5=c9900ea6c362454ca1ba5b9fcd88fea4"
 
 DEPENDS = "cjson fcgi"
 

@@ -2,7 +2,7 @@ SUMMARY = "NylonWeb router management UI"
 DESCRIPTION = "Vue 3 SPA with FastCGI REST backend (nylonweb_cgi) for OpenWrt-style UCI configuration."
 HOMEPAGE = "https://github.com/FastLinkingAI/NylonWeb"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://COPYING;md5=15e08d4dfaf5f42d190f3fd467ebbbc0"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/COPYING;md5=15e08d4dfaf5f42d190f3fd467ebbbc0"
 
 DEPENDS = "cjson crest fcgi uci libubox json-c nodejs-native"
 
