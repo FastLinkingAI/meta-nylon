@@ -19,7 +19,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 inherit pkgconfig
 
 do_compile() {
-	${CC} ${CFLAGS} -fPIC -shared -I${S} -I${STAGING_INCDIR}/cjson \
+	${CC} ${CFLAGS} -fPIC -shared -Wl,-soname,libcrest.so.0 -I${S} -I${STAGING_INCDIR}/cjson \
 		${S}/cREST.c ${LDFLAGS} -lcjson \
 		-o ${B}/libcrest.so
 }
