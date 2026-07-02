@@ -1,0 +1,4 @@
+config user 'admin'
+	option username 'admin'
+	option password 'admin123'
+	option role 'administrator'
