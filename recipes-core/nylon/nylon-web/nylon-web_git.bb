@@ -20,6 +20,11 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 inherit pkgconfig
 
+# npm needs to reach the registry to install webui/node_modules; bitbake
+# isolates tasks from the network by default (network namespace), so this
+# task must opt back in explicitly.
+do_compile[network] = "1"
+
 CGI_SRCS = "DeviceController FirewallController NetworkController StatusController \
             SystemController UserController WifiController UciUtil main"
 
